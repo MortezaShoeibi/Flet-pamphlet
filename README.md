@@ -4,7 +4,11 @@
 
  *so what I'm going to do on this repo is to code and kind of create a **Flet** pamphlet or **Flet** cheat sheet.*
 
- 
+so Install Flet and let's get started:
+
+```bash
+pip install Flet
+```
 # $Comments$
 
 *I'm planning to add long comments as notes between the codes to explain my thoughts and ideas, I'll do my best to keep it clean!*
