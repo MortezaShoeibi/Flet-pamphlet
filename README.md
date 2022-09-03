@@ -14,6 +14,11 @@ pip install Flet
 *I'm planning to add long comments as notes between the codes to explain my thoughts and ideas, I'll do my best to keep it clean!*
 
 
+# $Requirements.txt files$
+
+*since I'm coding multiple programs I'm going to put each ones requirements.txt file in its own directory*
+
+
 # $My.Website$
 
 *don't forget to check [My Website](https://mortezashoeibi.github.io)*
