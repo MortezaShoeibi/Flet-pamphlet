@@ -7,6 +7,7 @@ def main(page: Page):
     # page general settings
     page.title = 'Crypto price'
     page.vertical_alignment = 'start'
+    page.scroll = 'always'
 
     # page controls.
     symbol = TextField(label="Enter the crypto symbol!", autofocus=True)
