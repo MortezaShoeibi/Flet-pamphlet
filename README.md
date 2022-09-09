@@ -14,10 +14,20 @@ pip install Flet
 *I'm planning to add long comments as notes between the codes to explain my thoughts and ideas, I'll do my best to keep it clean!*
 
 
-# $Requirements.txt files$
+# $Requirements.txt$ $files$
 
 *since I'm coding multiple programs I'm going to put each ones requirements.txt file in its own directory*
 
+
+# $My$ $opinion$ $about$ $Flet$
+
+*It's a cool idea, but I absolutely won't start a serious project with it because:*
+
+- *They were not good enough at show and displaying the errors*
+- *Its bugs are more than its features and abilities*
+- *the docs are not explaining enough* 
+
+*but for small projects, why not!*
 
 # $My.Website$
 
