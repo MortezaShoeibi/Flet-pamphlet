@@ -1,3 +1,4 @@
+from email.policy import default
 import flet
 from flet import Page, Text, TextField, Row, Column, ElevatedButton
 import requests
@@ -15,15 +16,15 @@ def main(page: Page):
 
     # checks the entered value.
     def check_status(response):
-        if response.status_code == 200:
-            data = response.json()
-            display_price.controls.append(Text(value=f"The {data['symbol']} price is {data['price']}", size=30, color="white", bgcolor="green", weight="bold"))
-            
-        elif response.status_code == 403:
-            display_price.controls.append(Text(value=f"Turn on your VPN", size=30, color="white", bgcolor="pink"))
-            
-        else:
-            display_price.controls.append(Text(value=f"Couldn't find anything, are you sure about this '{symbol.value}' symbol?", size=30, color="white", bgcolor="pink"))
+
+        match response.status_code:
+            case 200:
+                data = response.json()
+                display_price.controls.append(Text(value=f"The {data['symbol']} price is {data['price']}", size=30, color="white", bgcolor="green", weight="bold"))
+            case 403:
+                display_price.controls.append(Text(value=f"Turn on your VPN", size=30, color="white", bgcolor="pink"))
+            case _:
+                display_price.controls.append(Text(value=f"Couldn't find anything, are you sure about this '{symbol.value}' symbol?", size=30, color="white", bgcolor="pink"))
 
     # button.
     def button_clicked(e):
