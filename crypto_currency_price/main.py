@@ -1,4 +1,3 @@
-from email.policy import default
 import flet
 from flet import Page, Text, TextField, Row, Column, ElevatedButton
 import requests
